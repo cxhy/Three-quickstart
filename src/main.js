@@ -16,7 +16,7 @@ scene.add(camera);
 
 var xx = new THREE.Mesh(new THREE.CubeGeometry(1, 2, 3),
         new THREE.MeshBasicMaterial({
-            color: 0xff0000
+            color: 0xffe000
         })
 );
 scene.add(xx);
