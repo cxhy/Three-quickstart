@@ -8,12 +8,13 @@ function init(){
   var scene = new THREE.Scene();
   
   var camera = new THREE.OrthographicCamera(-2, 2, 1.5, -1.5, 1, 10);
-  camera.position.set(0, 0, 5);
+    camera.position.set(4, -3, 5);
+    camera.lookAt(new THREE.Vector3(0,0,0))
   scene.add(camera);
   
   var xx = new THREE.Mesh(new THREE.CubeGeometry(1, 1, 1),
           new THREE.MeshBasicMaterial({
-              color: 0xffe000,
+              color: 0xffef00,
               wireframe: true
           })
   );
