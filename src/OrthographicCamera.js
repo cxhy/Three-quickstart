@@ -7,8 +7,7 @@ function init(){
   
   var scene = new THREE.Scene();
   
-    //var camera = new THREE.OrthographicCamera(-2, 2, 1.5, -1.5, 1, 10);
-    var camera = new THREE.PerspectiveCamera(-2, 2, 1.5, -1.5, 1, 10);
+  var camera = new THREE.OrthographicCamera(-2, 2, 1.5, -1.5, 1, 10);
     camera.position.set(4, -3, 5);
     camera.lookAt(new THREE.Vector3(0,0,0))
   scene.add(camera);
@@ -20,7 +19,7 @@ function init(){
           })
   );
   scene.add(xx);
-    renderer.render(scene, camera);
+  
+  renderer.render(scene, camera);
 
-    
 }
